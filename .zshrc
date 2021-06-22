@@ -117,3 +117,7 @@ bindkey "^[a" beginning-of-line
 bindkey "^[e" end-of-line
 
 export PATH="/usr/local/opt/node@10/bin:$PATH"
+
+#To show the full path in zsh terminal
+setopt PROMPT_SUBST
+PROMPT=${PROMPT/\%c/\%~}
