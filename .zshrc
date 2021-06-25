@@ -122,6 +122,11 @@ export PATH="/usr/local/opt/node@10/bin:$PATH"
 export PATH="/usr/local/opt/tomcat@7/bin:$PATH"
 export CATALINA_BASE=/usr/local/tomcat
 export CATALINA_OPTS="-Xmx512m -Djava.awt.headless=true"
+alias tomcat="catalina jpda"
+alias tomcatLogs="tail -f /usr/local/tomcat/logs/catalina.out"
+
+#JAVA_HOME
+export JAVA_HOME=$(/usr/libexec/java_home)
 
 #To show the full path in zsh terminal
 setopt PROMPT_SUBST
